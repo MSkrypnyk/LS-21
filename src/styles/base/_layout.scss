@@ -10,3 +10,10 @@ body {
   background: #0C0F14;
   color: #fff;
 }
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  font-family: var(--font-family);
+}

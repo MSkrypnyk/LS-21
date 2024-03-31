@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductComponent } from './product/product.component';
+import { HomeFormComponent } from './home-form/home-form.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -12,7 +13,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     HomeComponent,
-    ProductComponent
+    ProductComponent,
+    HomeFormComponent
   ],
   imports: [
     CommonModule,

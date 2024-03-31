@@ -1,6 +1,13 @@
-<div class="list">
-  <a [routerLink]="'/product/' + item.id" class="item" *ngFor="let item of coffeeData">
-    {{item.title}}
-    {{item.id}}
-  </a>
-</div>
+<section class="home">
+  <h1 class="title">
+    Find the best <br />
+    coffee for you
+  </h1>
+  <app-home-form></app-home-form>
+  <div class="list">
+    <a [routerLink]="'/product/' + item.id" class="item" *ngFor="let item of coffeeData">
+      {{ item.title }}
+      {{ item.id }}
+    </a>
+  </div>
+</section>
