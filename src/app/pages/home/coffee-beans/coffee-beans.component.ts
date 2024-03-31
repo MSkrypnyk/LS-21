@@ -12,25 +12,25 @@ export class CoffeeBeansComponent {
       image: 'assets/img/home/beans1.png',
       title: 'Robusta Beans',
       desc: 'Medium Roasted',
-      id: 1,
+      id: 4,
     },
     {
       image: 'assets/img/home/beans2.png',
       title: 'Cappuccino',
       desc: 'With Steamed Milk',
-      id: 2,
+      id: 5,
     },
     {
       image: 'assets/img/home/beans3.png',
       title: 'Cappuccino',
       desc: 'With Steamed Milk',
-      id: 3,
+      id: 6,
     },
     {
       image: 'assets/img/home/beans4.png',
       title: 'Cappuccino',
       desc: 'With Steamed Milk',
-      id: 4,
+      id: 7,
     },
   ]
  public price: number = 4.20; 

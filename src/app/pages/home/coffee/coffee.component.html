@@ -1,13 +1,27 @@
 <nav class="categories-nav">
-    <ul class="categories-ul">
-      <li class="categories-li"><a class="categories-a" routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">All</a></li>
-      <li class="categories-li"><a class="categories-a" routerLink="/cappuccino" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Cappuccino</a></li>
-      <li class="categories-li"><a class="categories-a" routerLink="/espresso" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Espresso</a></li>
-      <li class="categories-li"><a class="categories-a" routerLink="/americano" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Americano</a></li>
-      <li class="categories-li"><a class="categories-a" routerLink="/macchiato" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Macchiato</a></li>
-    </ul>
-  </nav>
-  
+  <ul class="categories-ul">
+    <li class="categories-li">
+      <a class="categories-a" routerLink="/" [ngClass]="{'active-link': activeCategory === 'all'}"
+        (click)="setActiveCategory('all')">All</a>
+    </li>
+    <li class="categories-li">
+      <a class="categories-a" routerLink="/cappuccino" [ngClass]="{'active-link': activeCategory === 'cappuccino'}"
+        (click)="setActiveCategory('cappuccino')">Cappuccino</a>
+    </li>
+    <li class="categories-li">
+      <a class="categories-a" routerLink="/espresso" [ngClass]="{'active-link': activeCategory === 'espresso'}"
+        (click)="setActiveCategory('espresso')">Espresso</a>
+    </li>
+    <li class="categories-li">
+      <a class="categories-a" routerLink="/americano" [ngClass]="{'active-link': activeCategory === 'americano'}"
+        (click)="setActiveCategory('americano')">Americano</a>
+    </li>
+    <li class="categories-li">
+      <a class="categories-a" routerLink="/macchiato" [ngClass]="{'active-link': activeCategory === 'macchiato'}"
+        (click)="setActiveCategory('macchiato')">Macchiato</a>
+    </li>
+  </ul>
+
   <div class="list">
     <a [routerLink]="'/product/' + item.id" class="item" *ngFor="let item of coffeeData">
       <img [src]="item.image" class="item__img" alt="Coffee">
@@ -15,8 +29,8 @@
       <p class="item__desc">{{item.desc}}</p>
       <div class="item__id"> {{ item.id }}</div>
       <div class="price-group">
-       <p class="price"><span>$</span> {{ price | number: '.2-2'}}</p>
-       <span class="icon-plus"></span>
+        <p class="price"><span>$</span> {{ price | number: '.2-2'}}</p>
+        <span class="icon-plus"></span>
       </div>
     </a>
   </div>

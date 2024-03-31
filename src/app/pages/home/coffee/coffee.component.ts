@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './coffee.component.scss'
 })
 export class CoffeeComponent {
+  activeCategory: string = 'all';
+  setActiveCategory(category: string): void {
+    this.activeCategory = category;
+  }
  
   public coffeeData = [
     {

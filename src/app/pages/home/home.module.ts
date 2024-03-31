@@ -6,6 +6,8 @@ import { ProductComponent } from './product/product.component';
 import { HomeFormComponent } from './home-form/home-form.component';
 import { CoffeeComponent } from './coffee/coffee.component';
 import { CoffeeBeansComponent } from './coffee-beans/coffee-beans.component';
+import { ProductInfoComponent } from './product/product-info/product-info.component';
+import { ProductDetailsComponent } from './product/product-details/product-details.component';
 
 
 
@@ -21,6 +23,8 @@ const routes: Routes = [
     HomeFormComponent,
     CoffeeComponent,
     CoffeeBeansComponent,
+    ProductInfoComponent,
+    ProductDetailsComponent,
 
   ],
   imports: [
