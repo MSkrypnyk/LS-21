@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
+import { zoomIn } from '../../../shared/animation';
 
 @Component({
   selector: 'app-coffee-beans',
   templateUrl: './coffee-beans.component.html',
-  styleUrl: './coffee-beans.component.scss'
+  styleUrl: './coffee-beans.component.scss',
+  animations: [zoomIn],
 })
 export class CoffeeBeansComponent {
-
   public coffeeData = [
     {
       image: 'assets/img/home/beans1.png',
@@ -32,6 +33,6 @@ export class CoffeeBeansComponent {
       desc: 'With Steamed Milk',
       id: 7,
     },
-  ]
- public price: number = 4.20; 
+  ];
+  public price: number = 4.2;
 }

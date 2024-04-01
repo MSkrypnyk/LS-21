@@ -22,7 +22,7 @@
     </li>
   </ul>
 
-  <div class="list">
+  <div [@zoomIn] class="list">
     <a [routerLink]="'/product/' + item.id" class="item" *ngFor="let item of coffeeData">
       <img [src]="item.image" class="item__img" alt="Coffee">
       <h3 class="item__title">{{ item.title }}</h3>

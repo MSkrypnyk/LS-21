@@ -7,12 +7,12 @@
     <div class="details-size__item" (click)="selectSize('500gm')" [ngClass]="{'selected': selectedSize === '500gm'}">500gm</div>
     <div class="details-size__item" (click)="selectSize('1000gm')" [ngClass]="{'selected': selectedSize === '1000gm'}">1000gm</div>
 </div>
- <div class="details-price">
+ <div  class="details-price">
     <div class="details-price__info" >
         <p class="details-price__label">price</p>
         <p class="details-price__value"><span>$</span> 10.50</p>
     </div>
-    <button class="details-price__btn btn" (click)="addToCart() ">Add to Cart</button>
+    <button  class="details-price__btn btn" (click)="addToCart() ">Add to Cart</button>
     <div [@fadeInOut] *ngIf="message" class="product-message">{{ message }}</div>
  </div>
 </div>

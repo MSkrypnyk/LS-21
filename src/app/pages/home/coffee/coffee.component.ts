@@ -1,16 +1,18 @@
 import { Component } from '@angular/core';
+import { zoomIn } from '../../../shared/animation';
 
 @Component({
   selector: 'app-coffee',
   templateUrl: './coffee.component.html',
-  styleUrl: './coffee.component.scss'
+  styleUrl: './coffee.component.scss',
+  animations: [zoomIn],
 })
 export class CoffeeComponent {
   activeCategory: string = 'all';
   setActiveCategory(category: string): void {
     this.activeCategory = category;
   }
- 
+
   public coffeeData = [
     {
       image: 'assets/img/home/cappuccino1.png',
@@ -29,7 +31,7 @@ export class CoffeeComponent {
       title: 'Cappuccino',
       desc: 'With Steamed Milk',
       id: 3,
-    }
-  ]
- public price: number = 4.20; 
+    },
+  ];
+  public price: number = 4.2;
 }

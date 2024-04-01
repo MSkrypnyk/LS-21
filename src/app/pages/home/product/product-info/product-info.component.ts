@@ -21,6 +21,5 @@ export class ProductInfoComponent {
     this.location.back();
   }
 
-  addToFavorites(): void {
-    }
+  addToFavorites(): void {}
 }

@@ -2,6 +2,10 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(149rem, 1fr));
   gap: 22rem;
+  transition: .3s all ease-in;
+  @include desktop-small {
+    gap: 50rem;
+  }
 }
 .item {
   background: linear-gradient(137deg, #252a32 0%, #262b33 100%);
@@ -41,14 +45,14 @@
   font-size: 15rem;
   line-height: 133%;
   & span {
-    color: #d17842;
+    color: var(--c-primary);
   }
 }
 .icon-plus {
   font-size: 10rem;
   &::before {
     padding: 10rem;
-    background: #d17842;
+    background: var(--c-primary);
     border-radius: 7rem;
   }
 }

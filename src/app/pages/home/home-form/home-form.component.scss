@@ -1,5 +1,5 @@
 .form {
-  background: #141921;
+  background: var(--bg-secondary);
   border-radius: 15rem;
   padding: 13rem 18rem;
   max-width: 330rem;
@@ -12,22 +12,22 @@
     background: transparent;
     border: 0;
     outline: 0;
-    color: #fff;
+    color: var(--white);
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 10rem;
     line-height: 200%;
 
     &::placeholder {
-      color: #52555a;
+      color: var(--c-secondary);
     }
   }
 
   &__btn {
-    color: #52555a;
+    color: var(--c-secondary);
     background: transparent;
   }
   .icon-search:before {
-    color: #52555a;
+    color: var(--c-secondary);
   }
 }

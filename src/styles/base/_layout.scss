@@ -1,16 +1,21 @@
 html {
-  
   font-size: 1px;
-
+  @include tablet {
+    font-size: 1.2px;
+  }
+  @include desktop-small {
+    font-size: 1.4px;
+  }
 }
-html,body {
+html,
+body {
   height: 100%;
 }
 body {
   font-size: 16rem;
   font-family: var(--font-family);
-  background: #0C0F14;
-  color: #fff;
+  background: var(--bg-primary);
+  color: var( --white);
 }
 
 .btn {
@@ -21,5 +26,11 @@ body {
 }
 
 a {
-  color: #fff;
+  color: var( --white);
+}
+
+.page-title {
+font-weight: 600;
+font-size: 20rem;
+line-height: 180%;
 }
