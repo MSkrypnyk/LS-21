@@ -1,8 +1,10 @@
 .list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(149rem, 1fr));
+  display: flex;
+  overflow-x: auto;
   gap: 22rem;
   transition: .3s all ease-in;
+  overflow-x: auto;
+  padding-bottom: 15rem;
   @include desktop-small {
     gap: 50rem;
   }
@@ -13,6 +15,8 @@
   display: flex;
   flex-direction: column;
   padding: 12rem 12rem 22rem 12rem;
+  flex: 1 0 149rem;
+  
 
   &__img {
     margin-bottom: 10rem;

@@ -1,9 +1,10 @@
 .categories-ul {
   display: flex;
-  flex-wrap: wrap;
   gap: 19rem;
   align-items: center;
   margin-bottom: 22rem;
+  padding-bottom: 15rem;
+  overflow-x: auto;
 }
 
 .categories-a {
